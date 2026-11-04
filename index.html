@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#23664f">
+  <meta name="description" content="Encuentra cuidadores de confianza para paseos, visitas y cuidado de mascotas en Lima. Compara perfiles, reseñas y precios en PetMatch.">
+  <meta property="og:title" content="PetMatch | Cuidar bien también es querer bien">
+  <meta property="og:description" content="Encuentra cuidadores de confianza para tu mascota.">
+  <meta property="og:type" content="website">
+  <title>PetMatch — Cuidar bien también es querer bien</title>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">🐾 Cuidar bien también es querer bien · Cuidadores de confianza cerca de ti</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="PetMatch, ir al inicio"><span class="brand-mark">🐾</span><span>PetMatch</span></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+      <a href="#servicios">Servicios</a><a href="#cuidadores">Cuidadores</a><a href="#seguridad">Cómo te cuidamos</a><a href="#como-funciona">Cómo funciona</a>
+    </nav>
+    <button class="button button-dark header-join" data-action="join">Únete gratis</button>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">● CUIDADO CON CONFIANZA, CERCA DE TI</span>
+        <h1>Su mundo es pequeño.<br>Su cuidado, enorme.</h1>
+        <p>Encuentra cuidadores para paseos, visitas y cuidado de tu mascota. Compara perfiles, revisa reseñas y reserva en un solo lugar.</p>
+        <a class="button button-dark" href="#buscador">Encontrar cuidador <span aria-hidden="true">→</span></a>
+        <div class="social-proof"><div class="avatar-stack"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop&crop=faces&auto=format&q=70" alt="Usuaria de PetMatch" width="34" height="34"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=faces&auto=format&q=70" alt="Usuario de PetMatch" width="34" height="34"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop&crop=faces&auto=format&q=70" alt="Usuaria de PetMatch" width="34" height="34"></div><div><span class="stars">★★★★★</span><small>Una comunidad que ama a los animales</small></div></div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=1100&h=900&fit=crop&auto=format&q=82" alt="Perro golden retriever disfrutando de un paseo al aire libre" width="1100" height="900" fetchpriority="high">
+        <div class="verified-float"><span>🛡️</span> Cuidadores verificados</div><div class="paw-float">🐕</div>
+      </div>
+    </section>
+
+    <section class="search-panel section-wrap" id="buscador" aria-label="Buscar cuidadores">
+      <div class="field"><label for="service">SERVICIO</label><select id="service"><option value="all">Todos los servicios</option><option value="Paseos">Paseos</option><option value="Cuidado en casa">Cuidado en casa</option><option value="Visitas">Visitas</option><option value="Baño y peluquería">Baño y peluquería</option></select></div>
+      <div class="field"><label for="zone">ZONA</label><select id="zone"><option value="all">Toda Lima</option><option>Miraflores</option><option>Surco</option><option>San Isidro</option><option>Barranco</option><option>San Borja</option></select></div>
+      <div class="field"><label for="date">FECHA IDEAL</label><input id="date" type="date" aria-label="Fecha ideal"></div>
+      <button class="button button-dark search-button" id="search-button">Buscar cuidadores <span aria-hidden="true">→</span></button>
+    </section>
+
+    <section class="services section-wrap" id="servicios">
+      <div class="section-heading"><div><h2>Un cuidado para cada momento</h2><p>Elige el servicio que mejor acompaña su rutina.</p></div></div>
+      <div class="service-grid">
+        <button class="service-card" data-service="Paseos"><span>🐕</span><strong>Paseos</strong><small>Salidas y compañía</small></button>
+        <button class="service-card" data-service="Cuidado en casa"><span>🏡</span><strong>Cuidado en casa</strong><small>Como en familia</small></button>
+        <button class="service-card" data-service="Visitas"><span>🦴</span><strong>Visitas</strong><small>Comida y mimos</small></button>
+        <button class="service-card" data-service="Baño y peluquería"><span>🛁</span><strong>Baño y peluquería</strong><small>Un momento de cuidado</small></button>
+      </div>
+    </section>
+
+    <section class="caregivers-section" id="cuidadores">
+      <div class="section-wrap caregivers-inner">
+        <div class="section-heading"><div><h2>Cuidadores recomendados</h2><p>Personas que cuidan como si fueran parte de tu familia.</p></div><span class="result-count" id="result-count">3 cuidadores</span></div>
+        <div class="caregiver-grid" id="caregiver-grid">
+          <article class="caregiver-card" data-services="Paseos,Visitas" data-zone="Miraflores" data-name="Valeria M.">
+            <div class="card-photo"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=700&h=520&fit=crop&crop=faces&auto=format&q=80" alt="Retrato de Valeria, cuidadora de mascotas" width="700" height="520" loading="lazy"><span class="verified-tag">✓ PERFIL VERIFICADO</span><button class="favorite" aria-label="Guardar a Valeria en favoritos" aria-pressed="false">♡</button></div>
+            <div class="caregiver-info"><div class="name-line"><h3>Valeria M.</h3><span>★ 4.9 (38)</span></div><p>Miraflores · 2 años de experiencia</p><div class="card-bottom"><strong>S/ 25 <small>/ servicio</small></strong><button class="button button-dark profile-button" data-profile="valeria">Ver perfil</button></div></div>
+          </article>
+          <article class="caregiver-card" data-services="Paseos,Cuidado en casa" data-zone="Surco" data-name="Andrés R.">
+            <div class="card-photo"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=700&h=520&fit=crop&crop=faces&auto=format&q=80" alt="Retrato de Andrés, cuidador de mascotas" width="700" height="520" loading="lazy"><span class="verified-tag">✓ PERFIL VERIFICADO</span><button class="favorite" aria-label="Guardar a Andrés en favoritos" aria-pressed="false">♡</button></div>
+            <div class="caregiver-info"><div class="name-line"><h3>Andrés R.</h3><span>★ 5.0 (24)</span></div><p>Surco · 3 años de experiencia</p><div class="card-bottom"><strong>S/ 40 <small>/ servicio</small></strong><button class="button button-dark profile-button" data-profile="andres">Ver perfil</button></div></div>
+          </article>
+          <article class="caregiver-card" data-services="Visitas,Baño y peluquería,Cuidado en casa" data-zone="San Isidro" data-name="Camila P.">
+            <div class="card-photo"><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=700&h=520&fit=crop&auto=format&q=80" alt="Camila conversando con una clienta" width="700" height="520" loading="lazy"><span class="verified-tag">✓ PERFIL VERIFICADO</span><button class="favorite" aria-label="Guardar a Camila en favoritos" aria-pressed="false">♡</button></div>
+            <div class="caregiver-info"><div class="name-line"><h3>Camila P.</h3><span>★ 4.8 (51)</span></div><p>San Isidro · 4 años de experiencia</p><div class="card-bottom"><strong>S/ 30 <small>/ servicio</small></strong><button class="button button-dark profile-button" data-profile="camila">Ver perfil</button></div></div>
+          </article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No encontramos cuidadores con esos filtros. Prueba con otra zona o servicio.</p>
+      </div>
+    </section>
+
+    <section class="trust-section section-wrap" id="seguridad">
+      <div class="trust-copy"><span class="eyebrow eyebrow-lime">CUIDAR CON CONFIANZA</span><h2>Más tranquilidad para ti.<br>Más cariño para ellos.</h2><p>Queremos que encontrar ayuda para tu mascota sea simple y seguro. Revisa perfiles, compara reseñas y coordina la reserva desde un mismo lugar.</p><button class="button button-lime" data-action="safety">Conoce cómo funciona la seguridad <span aria-hidden="true">→</span></button></div>
+      <div class="trust-features"><div class="trust-feature"><span>▣</span><h3>Perfiles revisados</h3><p>Información clara para tomar una decisión.</p></div><div class="trust-feature"><span>⭐</span><h3>Reseñas reales</h3><p>Experiencias compartidas por otros usuarios.</p></div><div class="trust-feature"><span>🔒</span><h3>Reserva organizada</h3><p>Detalles del servicio reunidos en un solo lugar.</p></div><div class="trust-feature"><span>💬</span><h3>Soporte cercano</h3><p>Un canal para resolver tus dudas.</p></div></div>
+    </section>
+
+    <section class="steps section-wrap" id="como-funciona"><span class="eyebrow">FÁCIL DESDE EL PRIMER CLIC</span><h2>Tu próximo match, en 3 pasos</h2><p class="section-subtitle">Menos tiempo coordinando. Más tiempo disfrutando juntos.</p><div class="steps-grid"><article class="step-card"><span>01</span><h3>Busca un servicio</h3><p>Elige qué necesita tu mascota y en qué zona quieres encontrar ayuda.</p></article><article class="step-card"><span>02</span><h3>Compara cuidadores</h3><p>Explora perfiles, experiencia, disponibilidad y reseñas para elegir con confianza.</p></article><article class="step-card"><span>03</span><h3>Solicita tu reserva</h3><p>Selecciona fecha y horario. Revisa los datos y envía tu solicitud de reserva.</p></article></div></section>
+
+    <section class="bottom-cta section-wrap"><div><h2>¿Listo para encontrar su match?</h2><p>Un buen cuidado empieza con una buena conexión.</p></div><a class="button button-dark" href="#buscador">Encontrar cuidador <span aria-hidden="true">→</span></a></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-top"><a class="brand brand-light" href="#inicio"><span class="brand-mark">🐾</span><span>PetMatch</span></a><nav aria-label="Navegación del pie de página"><a href="#servicios">Servicios</a><a href="#cuidadores">Cuidadores</a><a href="#seguridad">Cómo te cuidamos</a><a href="#como-funciona">Cómo funciona</a></nav></div><div class="footer-bottom"><span>© <span id="year"></span> PetMatch. Hecho con cariño para ellos.</span><span>Un prototipo de plataforma para conectar mascotas y cuidadores.</span></div></footer>
+
+  <dialog class="modal" id="app-modal" aria-labelledby="modal-title"><div class="modal-head"><span class="modal-paw">🐾</span><button class="modal-close" aria-label="Cerrar ventana">×</button></div><div id="modal-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
